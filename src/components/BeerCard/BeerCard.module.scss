@@ -1,0 +1,186 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  display: inline-block;
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  border: 1px solid #f1f1f100;
+  border-radius: 15px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px 20px 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(42, 128, 161);
+  color: rgb(255, 255, 255);
+  img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.ebc {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  margin-bottom: -5px;
+  border: 2px solid #000;
+}
+.ebc-1 {
+  background: #fce89a;
+}
+.ebc-2 {
+  background: #fcda78;
+}
+.ebc-3 {
+  background: #feca5a;
+}
+.ebc-4 {
+  background: #ffbd49;
+}
+.ebc-5 {
+  background: #fab223;
+}
+.ebc-6 {
+  background: #f5a900;
+}
+.ebc-7 {
+  background: #ef9e00;
+}
+.ebc-8 {
+  background: #e49200;
+}
+.ebc-9 {
+  background: #e38804;
+}
+.ebc-10 {
+  background: #d77f01;
+}
+.ebc-11 {
+  background: #d57600;
+}
+.ebc-12 {
+  background: #cb6d02;
+}
+.ebc-13 {
+  background: #c66401;
+}
+.ebc-14 {
+  background: #bc5d05;
+}
+.ebc-15 {
+  background: #ba5105;
+}
+.ebc-16 {
+  background: #b14f00;
+}
+.ebc-17 {
+  background: #aa4801;
+}
+.ebc-18 {
+  background: #a44000;
+}
+.ebc-19 {
+  background: #9e3800;
+}
+.ebc-20 {
+  background: #963600;
+}
+.ebc-21 {
+  background: #8f3000;
+}
+.ebc-22 {
+  background: #8f2a02;
+}
+.ebc-23 {
+  background: #872401;
+}
+.ebc-24 {
+  background: #7e1f00;
+}
+.ebc-25 {
+  background: #7e1903;
+}
+.ebc-26 {
+  background: #721b02;
+}
+.ebc-27 {
+  background: #6a1601;
+}
+.ebc-28 {
+  background: #651101;
+}
+.ebc-29 {
+  background: #5f0f04;
+}
+.ebc-30 {
+  background: #570f03;
+}
+.ebc-31 {
+  background: #4a1203;
+}
+.ebc-32 {
+  background: #580e01;
+}
+.ebc-33 {
+  background: #4b0d08;
+}
+.ebc-34 {
+  background: #500405;
+}
+.ebc-35 {
+  background: #440907;
+}
+.ebc-36 {
+  background: #470609;
+}
+.ebc-37 {
+  background: #3e0a07;
+}
+.ebc-38 {
+  background: #360906;
+}
+.ebc-39 {
+  background: #3c060c;
+}
+.ebc-40 {
+  background: #39060b;
+}
