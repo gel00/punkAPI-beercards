@@ -15,6 +15,7 @@ const SearchBar = ({handler}) => {
     });
   };
 
+  const [isFiltersVisible, toggleFilterVisible] = useState(false);
   const getFilters = (alc,color)=>{
     setFilters({
       alc: alc,
@@ -26,16 +27,31 @@ const SearchBar = ({handler}) => {
       name : name
     });
   };
+
+  const toggleFilters = ()=>{
+    toggleFilterVisible(!isFiltersVisible);
+    if (!isFiltersVisible) {
+      setFilters({});
+    }
+    handler({
+      alc : "",
+      color : "",
+      name : name
+    });
+  };
   return (
     <div className={styles["search-bar"]}>
       <div className={styles["search-field"]}>
         <label htmlFor="search"><FontAwesomeIcon icon="search" /></label>
         <input id="beer" placeholder="name of the beer" type="text" onChange={getText}/>
-        <button><FontAwesomeIcon icon="sliders-h" /></button>
+        <button onClick={toggleFilters}><FontAwesomeIcon icon="sliders-h" /></button>
       </div>
-      <div className={styles.filter}>
-          <Range getFilters={getFilters}/>
-        </div>
+      {
+        isFiltersVisible && <div className={styles.filter}>
+        <Range getFilters={getFilters}/>
+      </div>
+      }
+      
     </div>
     
   )
