@@ -52,7 +52,7 @@ const BeerCard = ({beer}) => {
           
           </div>
           
-          <h4>{name}</h4>
+          <h4>{trim(name,14)}</h4>
           
           <div className={`${styles["round-container"]} ${styles["bottom-container"]}`}>
             <Ingredients name={name} list={ingredients}/>

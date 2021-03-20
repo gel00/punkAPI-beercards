@@ -1,0 +1,177 @@
+.beer {
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  top: -8px;
+  left: -5px;
+  z-index: 10;
+  background-image: url("../../img/beerIcon.svg");
+}
+
+.beer-color {
+  position: relative;
+  top: 0;
+  left: 30px;
+  height: 23px;
+  width: 18px;
+}
+
+.ebc-1 {
+  background-color: #fce89a;
+}
+
+.ebc-2 {
+  background-color: #fcda78;
+}
+
+.ebc-3 {
+  background-color: #feca5a;
+}
+
+.ebc-4 {
+  background-color: #ffbd49;
+}
+
+.ebc-5 {
+  background-color: #fab223;
+}
+
+.ebc-6 {
+  background-color: #f5a900;
+}
+
+.ebc-7 {
+  background-color: #ef9e00;
+}
+
+.ebc-8 {
+  background-color: #e49200;
+}
+
+.ebc-9 {
+  background-color: #e38804;
+}
+
+.ebc-10 {
+  background-color: #d77f01;
+}
+
+.ebc-11 {
+  background-color: #d57600;
+}
+
+.ebc-12 {
+  background-color: #cb6d02;
+}
+
+.ebc-13 {
+  background-color: #c66401;
+}
+
+.ebc-14 {
+  background-color: #bc5d05;
+}
+
+.ebc-15 {
+  background-color: #ba5105;
+}
+
+.ebc-16 {
+  background-color: #b14f00;
+}
+
+.ebc-17 {
+  background-color: #aa4801;
+}
+
+.ebc-18 {
+  background-color: #a44000;
+}
+
+.ebc-19 {
+  background-color: #9e3800;
+}
+
+.ebc-20 {
+  background-color: #963600;
+}
+
+.ebc-21 {
+  background-color: #8f3000;
+}
+
+.ebc-22 {
+  background-color: #8f2a02;
+}
+
+.ebc-23 {
+  background-color: #872401;
+}
+
+.ebc-24 {
+  background-color: #7e1f00;
+}
+
+.ebc-25 {
+  background-color: #7e1903;
+}
+
+.ebc-26 {
+  background-color: #721b02;
+}
+
+.ebc-27 {
+  background-color: #6a1601;
+}
+
+.ebc-28 {
+  background-color: #651101;
+}
+
+.ebc-29 {
+  background-color: #5f0f04;
+}
+
+.ebc-30 {
+  background-color: #570f03;
+}
+
+.ebc-31 {
+  background-color: #4a1203;
+}
+
+.ebc-32 {
+  background-color: #580e01;
+}
+
+.ebc-33 {
+  background-color: #4b0d08;
+}
+
+.ebc-34 {
+  background-color: #500405;
+}
+
+.ebc-35 {
+  background-color: #440907;
+}
+
+.ebc-36 {
+  background-color: #470609;
+}
+
+.ebc-37 {
+  background-color: #3e0a07;
+}
+
+.ebc-38 {
+  background-color: #360906;
+}
+
+.ebc-39 {
+  background-color: #3c060c;
+}
+
+.ebc-40 {
+  background-color: #39060b;
+}

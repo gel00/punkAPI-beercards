@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap');
 
 .ebc-1 {
   background-color: #fce89a;
@@ -123,7 +122,6 @@
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 body {
-  height: 100vh;
   background-color: #872401;
   background-image: url('../../img/background.jpg');
   background-size: cover;
@@ -139,7 +137,6 @@ body {
   border: 1px solid #f1f1f100;
   border-radius: 15px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  font-family: 'Fredericka the Great', cursive;
   font-family: 'Rye', cursive;
 }
 
