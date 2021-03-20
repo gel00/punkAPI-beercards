@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/punkAPI-beercards/static/css/main.33cdbdb6.chunk.css",
-    "main.js": "/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js",
-    "main.js.map": "/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js.map",
-    "runtime-main.js": "/punkAPI-beercards/static/js/runtime-main.c8052e3c.js",
-    "runtime-main.js.map": "/punkAPI-beercards/static/js/runtime-main.c8052e3c.js.map",
-    "static/js/2.2f531bba.chunk.js": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js",
-    "static/js/2.2f531bba.chunk.js.map": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js.map",
-    "static/js/3.50845527.chunk.js": "/punkAPI-beercards/static/js/3.50845527.chunk.js",
-    "static/js/3.50845527.chunk.js.map": "/punkAPI-beercards/static/js/3.50845527.chunk.js.map",
+    "main.css": "/punkAPI-beercards/static/css/main.a5fc8309.chunk.css",
+    "main.js": "/punkAPI-beercards/static/js/main.db406348.chunk.js",
+    "main.js.map": "/punkAPI-beercards/static/js/main.db406348.chunk.js.map",
+    "runtime-main.js": "/punkAPI-beercards/static/js/runtime-main.24232939.js",
+    "runtime-main.js.map": "/punkAPI-beercards/static/js/runtime-main.24232939.js.map",
+    "static/js/2.2455f59f.chunk.js": "/punkAPI-beercards/static/js/2.2455f59f.chunk.js",
+    "static/js/2.2455f59f.chunk.js.map": "/punkAPI-beercards/static/js/2.2455f59f.chunk.js.map",
+    "static/js/3.6a911ed1.chunk.js": "/punkAPI-beercards/static/js/3.6a911ed1.chunk.js",
+    "static/js/3.6a911ed1.chunk.js.map": "/punkAPI-beercards/static/js/3.6a911ed1.chunk.js.map",
     "index.html": "/punkAPI-beercards/index.html",
-    "static/css/main.33cdbdb6.chunk.css.map": "/punkAPI-beercards/static/css/main.33cdbdb6.chunk.css.map",
-    "static/js/2.2f531bba.chunk.js.LICENSE.txt": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js.LICENSE.txt",
+    "static/css/main.a5fc8309.chunk.css.map": "/punkAPI-beercards/static/css/main.a5fc8309.chunk.css.map",
+    "static/js/2.2455f59f.chunk.js.LICENSE.txt": "/punkAPI-beercards/static/js/2.2455f59f.chunk.js.LICENSE.txt",
     "static/media/BeerCard.module.scss": "/punkAPI-beercards/static/media/cardfront.b180066c.png",
     "static/media/logo.6ce24c58.svg": "/punkAPI-beercards/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8052e3c.js",
-    "static/js/2.2f531bba.chunk.js",
-    "static/css/main.33cdbdb6.chunk.css",
-    "static/js/main.c1bfc8e1.chunk.js"
+    "static/js/runtime-main.24232939.js",
+    "static/js/2.2455f59f.chunk.js",
+    "static/css/main.a5fc8309.chunk.css",
+    "static/js/main.db406348.chunk.js"
   ]
 }
