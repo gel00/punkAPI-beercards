@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import styles from './Range.module.scss'
 
 
-const Range = () => {
+const Range = ({getFilters}) => {
   const [alc,setAlc] = useState(10);
   const [color,setColor] = useState(20);
   const eventHandlerAlc = ({target})=>{
     setAlc(target.value);
+    getFilters(target.value, color);
   };
   const eventHandlerColor = ({target})=>{
     setColor(target.value);
+    getFilters(alc, target.value);
   };
   return (
     <>

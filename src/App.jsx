@@ -9,10 +9,13 @@ import library from "./data/fa-library";
 
 function App() {
   const [beerList, setBeerList] = useState([]);
-  const searchEventHandler = (str)=>{
-    getBeer(setBeerList,str);
+  
+  const searchEventHandler = (obj)=>{
+    console.log(obj);
+    getBeer(setBeerList,obj);
   };
-
+  
+  
   return (
     <div className="App">
       <h1>Beer API</h1>
