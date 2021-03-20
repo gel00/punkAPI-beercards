@@ -2,7 +2,7 @@
   "name": "beer-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/gel00/punkAPI-beercards",
+  "homepage": "https://gel00.github.io/punkAPI-beercards/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
