@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/gel00/punkAPI-beercards/static/css/main.dea9c424.chunk.css",
-    "main.js": "/gel00/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js",
-    "main.js.map": "/gel00/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js.map",
-    "runtime-main.js": "/gel00/punkAPI-beercards/static/js/runtime-main.f7b0ad78.js",
-    "runtime-main.js.map": "/gel00/punkAPI-beercards/static/js/runtime-main.f7b0ad78.js.map",
-    "static/js/2.2f531bba.chunk.js": "/gel00/punkAPI-beercards/static/js/2.2f531bba.chunk.js",
-    "static/js/2.2f531bba.chunk.js.map": "/gel00/punkAPI-beercards/static/js/2.2f531bba.chunk.js.map",
-    "static/js/3.50845527.chunk.js": "/gel00/punkAPI-beercards/static/js/3.50845527.chunk.js",
-    "static/js/3.50845527.chunk.js.map": "/gel00/punkAPI-beercards/static/js/3.50845527.chunk.js.map",
-    "index.html": "/gel00/punkAPI-beercards/index.html",
-    "static/css/main.dea9c424.chunk.css.map": "/gel00/punkAPI-beercards/static/css/main.dea9c424.chunk.css.map",
-    "static/js/2.2f531bba.chunk.js.LICENSE.txt": "/gel00/punkAPI-beercards/static/js/2.2f531bba.chunk.js.LICENSE.txt",
-    "static/media/BeerCard.module.scss": "/gel00/punkAPI-beercards/static/media/cardfront.b180066c.png",
-    "static/media/logo.6ce24c58.svg": "/gel00/punkAPI-beercards/static/media/logo.6ce24c58.svg"
+    "main.css": "/punkAPI-beercards/static/css/main.33cdbdb6.chunk.css",
+    "main.js": "/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js",
+    "main.js.map": "/punkAPI-beercards/static/js/main.c1bfc8e1.chunk.js.map",
+    "runtime-main.js": "/punkAPI-beercards/static/js/runtime-main.c8052e3c.js",
+    "runtime-main.js.map": "/punkAPI-beercards/static/js/runtime-main.c8052e3c.js.map",
+    "static/js/2.2f531bba.chunk.js": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js",
+    "static/js/2.2f531bba.chunk.js.map": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js.map",
+    "static/js/3.50845527.chunk.js": "/punkAPI-beercards/static/js/3.50845527.chunk.js",
+    "static/js/3.50845527.chunk.js.map": "/punkAPI-beercards/static/js/3.50845527.chunk.js.map",
+    "index.html": "/punkAPI-beercards/index.html",
+    "static/css/main.33cdbdb6.chunk.css.map": "/punkAPI-beercards/static/css/main.33cdbdb6.chunk.css.map",
+    "static/js/2.2f531bba.chunk.js.LICENSE.txt": "/punkAPI-beercards/static/js/2.2f531bba.chunk.js.LICENSE.txt",
+    "static/media/BeerCard.module.scss": "/punkAPI-beercards/static/media/cardfront.b180066c.png",
+    "static/media/logo.6ce24c58.svg": "/punkAPI-beercards/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7b0ad78.js",
+    "static/js/runtime-main.c8052e3c.js",
     "static/js/2.2f531bba.chunk.js",
-    "static/css/main.dea9c424.chunk.css",
+    "static/css/main.33cdbdb6.chunk.css",
     "static/js/main.c1bfc8e1.chunk.js"
   ]
 }
