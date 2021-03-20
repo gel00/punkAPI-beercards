@@ -1,13 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap');
+
+.ebc-1 {
+  background-color: #fce89a;
+}
+.ebc-2 {
+  background-color: #fcda78;
+}
+.ebc-3 {
+  background-color: #feca5a;
+}
+.ebc-4 {
+  background-color: #ffbd49;
+}
+.ebc-5 {
+  background-color: #fab223;
+}
+.ebc-6 {
+  background-color: #f5a900;
+}
+.ebc-7 {
+  background-color: #ef9e00;
+}
+.ebc-8 {
+  background-color: #e49200;
+}
+.ebc-9 {
+  background-color: #e38804;
+}
+.ebc-10 {
+  background-color: #d77f01;
+}
+.ebc-11 {
+  background-color: #d57600;
+}
+.ebc-12 {
+  background-color: #cb6d02;
+}
+.ebc-13 {
+  background-color: #c66401;
+}
+.ebc-14 {
+  background-color: #bc5d05;
+}
+.ebc-15 {
+  background-color: #ba5105;
+}
+.ebc-16 {
+  background-color: #b14f00;
+}
+.ebc-17 {
+  background-color: #aa4801;
+}
+.ebc-18 {
+  background-color: #a44000;
+}
+.ebc-19 {
+  background-color: #9e3800;
+}
+.ebc-20 {
+  background-color: #963600;
+}
+.ebc-21 {
+  background-color: #8f3000;
+}
+.ebc-22 {
+  background-color: #8f2a02;
+}
+.ebc-23 {
+  background-color: #872401;
+}
+.ebc-24 {
+  background-color: #7e1f00;
+}
+.ebc-25 {
+  background-color: #7e1903;
+}
+.ebc-26 {
+  background-color: #721b02;
+}
+.ebc-27 {
+  background-color: #6a1601;
+}
+.ebc-28 {
+  background-color: #651101;
+}
+.ebc-29 {
+  background-color: #5f0f04;
+}
+.ebc-30 {
+  background-color: #570f03;
+}
+.ebc-31 {
+  background-color: #4a1203;
+}
+.ebc-32 {
+  background-color: #580e01;
+}
+.ebc-33 {
+  background-color: #4b0d08;
+}
+.ebc-34 {
+  background-color: #500405;
+}
+.ebc-35 {
+  background-color: #440907;
+}
+.ebc-36 {
+  background-color: #470609;
+}
+.ebc-37 {
+  background-color: #3e0a07;
+}
+.ebc-38 {
+  background-color: #360906;
+}
+.ebc-39 {
+  background-color: #3c060c;
+}
+.ebc-40 {
+  background-color: #39060b;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+body {
+  height: 100vh;
+  background-color: #872401;
+  background-image: url('../../img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .flip-card {
   display: inline-block;
   background-color: transparent;
   width: 300px;
-  height: 500px;
+  height: 495px;
   margin: 10px;
   border: 1px solid #f1f1f100;
   border-radius: 15px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Rye', cursive;
 }
 
 /* This container is needed to position the front and back side */
@@ -36,23 +169,166 @@
   box-sizing: border-box;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: rgb(42, 128, 161);
-  color: rgb(255, 255, 255);
-  img {
-    height: 200px;
-    width: auto;
+  //background-color: rgb(42, 128, 161);
+  background-image: url("../../img/cardfront.png");
+  background-size: 100% auto;
+  color: #5d2d0f;
+  h5 {
+    text-align: center;
+    position: absolute;
+    top: 37px;
+    left: 97px;
+    width: 104px;
+    line-height: 15px;
+    font-size: 14px;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  .img-container {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 0;
+    text-align: center;
+    img {
+      height: 200px;
+      width: auto;
+    }
+    
+  }
+
+  .vol {
+    position: absolute;
+    bottom: 135px;
+    left: 68px;
+    font-size: 10px;
+    font-weight: 400;
+    span {
+      font-size: 14px;;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    width: 158px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 360px;
+    left: 70px;
+    font-size: 16px;
+    font-family: 'Rye', cursive;
+    font-weight: 400;
+  }
+  .since {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    left: 0;
+    text-align: center;
+    color: #5d2d0f;
+    font-weight: 400;
+    font-size: 14px;
   }
 }
 
 /* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
-  color: white;
+  color: rgb(77, 77, 77);
   transform: rotateY(180deg);
+  background-image: url('../../img/cardback.jpg');
+  background-size: 100% auto;
+
+  .description {
+    font-size: 10px;
+  }
+  .top-container {
+    top: 40px;
+    left: 53px;
+  }
+  .bottom-container {
+    top: 260px;
+    left: 53px;
+  }
+  .round-container {
+    box-sizing: border-box;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    overflow: hidden;
+    div {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      p{
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 10px;
+      }
+      &::before {
+        content: "";
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        float: left;
+        shape-outside: polygon(
+          0 0,
+          98% 0,
+          50% 6%,
+          23.4% 17.3%,
+          6% 32.6%,
+          0 50%,
+          6% 65.6%,
+          23.4% 82.7%,
+          50% 94%,
+          98% 100%,
+          0 100%
+        );
+        shape-margin: 7%;
+      }
+      p::before {
+        content: "";
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        float: right;
+        shape-outside: polygon(
+          2% 0%,
+          100% 0%,
+          100% 100%,
+          2% 100%,
+          50% 94%,
+          76.6% 82.7%,
+          94% 65.6%,
+          100% 50%,
+          94% 32.6%,
+          76.6% 17.3%,
+          50% 6%
+        );
+        shape-margin: 7%;
+      }
+    }
+
+  }
+  h4 {
+    position: absolute;
+    top: 213px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }
 
 
@@ -63,124 +339,4 @@
   margin-left: 10px;
   margin-bottom: -5px;
   border: 2px solid #000;
-}
-.ebc-1 {
-  background: #fce89a;
-}
-.ebc-2 {
-  background: #fcda78;
-}
-.ebc-3 {
-  background: #feca5a;
-}
-.ebc-4 {
-  background: #ffbd49;
-}
-.ebc-5 {
-  background: #fab223;
-}
-.ebc-6 {
-  background: #f5a900;
-}
-.ebc-7 {
-  background: #ef9e00;
-}
-.ebc-8 {
-  background: #e49200;
-}
-.ebc-9 {
-  background: #e38804;
-}
-.ebc-10 {
-  background: #d77f01;
-}
-.ebc-11 {
-  background: #d57600;
-}
-.ebc-12 {
-  background: #cb6d02;
-}
-.ebc-13 {
-  background: #c66401;
-}
-.ebc-14 {
-  background: #bc5d05;
-}
-.ebc-15 {
-  background: #ba5105;
-}
-.ebc-16 {
-  background: #b14f00;
-}
-.ebc-17 {
-  background: #aa4801;
-}
-.ebc-18 {
-  background: #a44000;
-}
-.ebc-19 {
-  background: #9e3800;
-}
-.ebc-20 {
-  background: #963600;
-}
-.ebc-21 {
-  background: #8f3000;
-}
-.ebc-22 {
-  background: #8f2a02;
-}
-.ebc-23 {
-  background: #872401;
-}
-.ebc-24 {
-  background: #7e1f00;
-}
-.ebc-25 {
-  background: #7e1903;
-}
-.ebc-26 {
-  background: #721b02;
-}
-.ebc-27 {
-  background: #6a1601;
-}
-.ebc-28 {
-  background: #651101;
-}
-.ebc-29 {
-  background: #5f0f04;
-}
-.ebc-30 {
-  background: #570f03;
-}
-.ebc-31 {
-  background: #4a1203;
-}
-.ebc-32 {
-  background: #580e01;
-}
-.ebc-33 {
-  background: #4b0d08;
-}
-.ebc-34 {
-  background: #500405;
-}
-.ebc-35 {
-  background: #440907;
-}
-.ebc-36 {
-  background: #470609;
-}
-.ebc-37 {
-  background: #3e0a07;
-}
-.ebc-38 {
-  background: #360906;
-}
-.ebc-39 {
-  background: #3c060c;
-}
-.ebc-40 {
-  background: #39060b;
 }

@@ -1,29 +1,39 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
+import styles from './Ingredients.module.scss';
 
 const Ingredients = ({list, name}) => {
-  return (
-    <Fragment>
-    <h5>Ingredients:</h5>
-    <ul>
-      {Object.keys(list).map((ingredient,index) => {
-        return (
-          <li key={name+index}>{ingredient}
-            {
-            Array.isArray(list[ingredient])&&
-            <ul>
-              {Object.entries(list[ingredient]).map((subIngredient) => {
-                return (
-                  <li>{`${subIngredient[1].name}: ${subIngredient[1].amount.value}${subIngredient[1].amount.unit}`}</li>
-                );
-              })}
-            </ul>
-            }
-          </li>
+  const parseList = (list)=> {
+    let str = "ingredients: ";
+    Object.keys(list).forEach((ingredient,i) => {
+      if(i > 0) {str+=", ";}
+      let str2 = ingredient;
+      console.log(ingredient);
+      if ( Array.isArray(list[ingredient])) {
+        str2 += "; ";
+        
+        Object.entries(list[ingredient]).forEach(
           
-        )
-      })}
-    </ul>
-    </Fragment>
+          ((subIngredient,i) => {
+            
+          if(i > 0) {str2+=", ";}
+          const name = subIngredient[1].name;
+          const val = subIngredient[1].amount.value;
+          const unit= subIngredient[1].amount.unit.replace("kilo","k").replace("gramms","g");
+          console.log(val);
+          str2 += name + " " + val +unit;
+          
+        }));
+      }
+      str += str2;
+    })
+    return str;
+  };
+  return (
+
+
+    <div>
+  <p>{parseList(list)}</p>
+    </div>
   )
 }
 

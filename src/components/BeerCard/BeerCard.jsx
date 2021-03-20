@@ -12,38 +12,54 @@ const BeerCard = ({beer}) => {
     ibu,
     ebc,
     contributed_by,
-    ingredients
+    ingredients,
+    first_brewed
   } = beer;
-  const fixedEbc = ebc > 40 ? 40 : ebc; 
+  const fixedEbc = ebc > 40 ? 40 : ebc || 14; 
   const fixeMaker = contributed_by.replace(/<\S*>/, "");
+  let trim = (str,num) => {
+    let result = "";
+    const arr = str.slice(0,str.indexOf(" -")).split(" ");
+    arr.forEach(w => {
+      let str = (`${result} ${w}`).trim();
+      result = str.length < num ? str : result; 
+    });
+    return result;
+  };
 
   return (
     
-    <div class={styles["flip-card"]}>
-      <div class={styles["flip-card-inner"]}>
-        <div class={styles["flip-card-front"]}>
-          <h3>{name}</h3>
-          <img src={image_url} alt={name}/>
-          <p>{description}</p>
-        </div>
-        <div class={styles["flip-card-back"]}>
-          <h4>{name}</h4>
-          <h5>contributed by: {fixeMaker}</h5>
-          <q>{tagline}</q>
-          <p>vol.: {abv}%</p>
-          <label for="bitterness">{"Bitterness: "}</label>
-          {ibu ?
-            <progress id="bitterness" value={ibu} max="100"></progress> :
-            <p>N/A</p>
-          }
-          <p>
-            <span>Beer color:</span>
-            {ebc ?
-              <div className={`${styles["ebc-"+fixedEbc]} ${styles.ebc}`}></div> :
-              <span>N/A</span>
-            }
+    <div className={styles["flip-card"]}>
+      <div className={styles["flip-card-inner"]}>
+        <div className={`${styles["ebc-"+fixedEbc]} ${styles["flip-card-front"]}`}>
+          <h5>{fixeMaker}</h5>
+          <div className={styles['img-container']}>
+            <img src={image_url} alt={name}/>
+          </div>
+          <p className={styles.vol}>ALC:
+          <span> {abv}%</span> <br />
+            VOLUME
           </p>
-          <Ingredients name= {name} list={ingredients}/>
+          <h3>{trim(name,14)}</h3>
+          <p className={styles.since}>Since {first_brewed.slice(-4)}</p>
+        </div>
+        <div className={styles["flip-card-back"]}>
+          
+          <div className={`${styles["round-container"]} ${styles["top-container"]}`}>
+            <div>
+              <p className={styles.description}>{description}</p>
+            </div>
+          
+          </div>
+          
+          <h4>{name}</h4>
+          
+          <div className={`${styles["round-container"]} ${styles["bottom-container"]}`}>
+            <Ingredients name={name} list={ingredients}/>
+          </div>
+         
+          
+          
         </div>
       </div>
     </div>

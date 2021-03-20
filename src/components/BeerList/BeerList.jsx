@@ -2,7 +2,6 @@ import React from 'react';
 import BeerCard from '../BeerCard';
 
 const BeerList = ({list}) => {
-  console.log(list);
   return (
     <div>
      <h2>beerlist</h2>
