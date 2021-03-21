@@ -7,7 +7,6 @@ const Ingredients = ({list, name}) => {
     Object.keys(list).forEach((ingredient,i) => {
       if(i > 0) {str+=", ";}
       let str2 = ingredient;
-      console.log(ingredient);
       if ( Array.isArray(list[ingredient])) {
         str2 += "; ";
         
@@ -19,7 +18,6 @@ const Ingredients = ({list, name}) => {
           const name = subIngredient[1].name;
           const val = subIngredient[1].amount.value;
           const unit= subIngredient[1].amount.unit.replace("kilo","k").replace("gramms","g");
-          console.log(val);
           str2 += name + " " + val +unit;
           
         }));

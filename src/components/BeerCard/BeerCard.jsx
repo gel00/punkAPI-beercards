@@ -15,7 +15,7 @@ const BeerCard = ({beer,index, handler}) => {
     ingredients,
     first_brewed
   } = beer;
-  const fixedEbc = ebc > 40 ? 40 : ebc || 1; 
+  const fixedEbc = ebc > 40 ? 40 : parseInt(ebc) || 1;
   const fixeMaker = contributed_by.replace(/<\S*>/, "");
   let trim = (str,num) => {
     let result = "";
