@@ -43,7 +43,7 @@ const SearchBar = ({handler}) => {
     <div className={styles["search-bar"]}>
       <div className={styles["search-field"]}>
         <label htmlFor="search"><FontAwesomeIcon icon="search" /></label>
-        <input id="beer" placeholder="name of the beer" type="text" onChange={getText}/>
+        <input id="beer" placeholder="name of the beer" type="text" onChange={getText} autoFocus={true} autoComplete={"off"}/>
         <button onClick={toggleFilters}><FontAwesomeIcon icon="sliders-h" /></button>
       </div>
       {
