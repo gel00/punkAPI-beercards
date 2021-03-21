@@ -179,6 +179,13 @@ body {
   font-family: "Rye", cursive;
 }
 
+.enlarged {
+  position: arelative;
+  transform: scale(1.2, 1.2);
+  transform-origin: 50% 50%;
+  z-index: 4;
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;

@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 0 0 0;
   width:  380px;
+  margin-bottom: 30px;;
   
   
   .search-field {
@@ -12,9 +13,11 @@
     height: 34px;
     background: #fff;
     border-radius: 20px;
-  box-shadow: 1px 1px 5px 1px #1d1d1d;
-  z-index: 10;
+    box-shadow: 1px 1px 5px 1px #1d1d1d;
+    z-index: 1;
+    
   }
+
   label {
     height: 34px;
     width: 34px; 
@@ -90,7 +93,7 @@
         background-size: 30px 30px;
         border-radius: 50%;
         cursor: pointer;
-        z-index: 999;
+        z-index: 1;
       }
     }
     

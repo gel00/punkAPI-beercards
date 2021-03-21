@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 0 0 0;
   width: 380px;
+  margin-bottom: 30px;
 }
 .search-bar .search-field {
   position: relative;
@@ -12,7 +13,7 @@
   background: #fff;
   border-radius: 20px;
   box-shadow: 1px 1px 5px 1px #1d1d1d;
-  z-index: 10;
+  z-index: 1;
 }
 .search-bar label {
   height: 34px;
@@ -90,5 +91,5 @@
   background-size: 30px 30px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 999;
+  z-index: 1;
 }

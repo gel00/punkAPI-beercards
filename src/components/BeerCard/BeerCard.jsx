@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Ingredients from '../Ingredients'
 import styles from './BeerCard.module.scss';
 
-const BeerCard = ({beer}) => {
+const BeerCard = ({beer,index, handler}) => {
   const {
     image_url,
     name,
@@ -26,10 +26,12 @@ const BeerCard = ({beer}) => {
     });
     return result;
   };
-
+  const toggleLarge = () => {
+    handler(index);
+  };
+  
   return (
-    
-    <div className={styles["flip-card"]}>
+    <div className={styles["flip-card"]} onClick={toggleLarge}>
       <div className={styles["flip-card-inner"]}>
         <div className={`${styles["ebc-"+fixedEbc]} ${styles["flip-card-front"]}`}>
           <h5>{fixeMaker}</h5>
