@@ -7,7 +7,7 @@ const SearchBar = ({ handler }) => {
   const [filters, setFilters] = useState({
     alc: {
       min: 0.5,
-      max: 55,
+      max: 18.5,
     },
     color: {
       min: 1,
@@ -49,7 +49,7 @@ const SearchBar = ({ handler }) => {
       setFilters({
         alc: {
           min: 0.5,
-          max: 55,
+          max: 18.5,
         },
         color: {
           min: 1,
@@ -92,9 +92,9 @@ const SearchBar = ({ handler }) => {
               getFilters({ alc: { min: value[0], max: value[1] } });
             }}
             min={0.5}
-            max={55}
+            max={18.5}
             step={0.5}
-            defaultValue={[0.5, 55]}
+            defaultValue={[0.5, 18.5]}
             tipFormatter={(value) => `${value}%`}
           />
           <div className={styles["beer-cups"]}>
