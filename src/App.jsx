@@ -3,6 +3,8 @@ import BeerList from "./components/BeerList";
 import SearchBar from "./components/SearchBar";
 import { getBeer } from "./services/FetchBeer.js";
 import React, { useState } from "react";
+import styles from "./App.module.scss";
+import library from "./data/fa-library";
 
 function App() {
   const [beerList, setBeerList] = useState([]);

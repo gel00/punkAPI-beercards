@@ -1,29 +1,43 @@
 import React, { useState } from "react";
 import styles from "./SearchBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Range from "../Range";
+import Range from "../Range2";
 
 const SearchBar = ({ handler }) => {
-  const [filters, setFilters] = useState({});
+  const [filters, setFilters] = useState({
+    alc: {
+      min: 0.5,
+      max: 55,
+    },
+    color: {
+      min: 1,
+      max: 40,
+    },
+  });
   const [name, setName] = useState("");
   const getText = ({ target }) => {
     setName(target.value);
     handler({
-      abv_lt: filters.alc,
-      ebc_lt: filters.color,
+      abv_gt: filters.alc.min,
+      abv_lt: filters.alc.max,
+      ebc_gt: filters.color.min,
+      ebc_lt: filters.color.max,
       beer_name: target.value,
     });
   };
 
   const [isFiltersVisible, toggleFilterVisible] = useState(false);
-  const getFilters = (alc, color) => {
+  //ubdating filter object
+  const getFilters = (filtersUpdate) => {
     setFilters({
-      alc: alc,
-      color: color,
+      ...filters,
+      ...filtersUpdate,
     });
     handler({
-      abv_lt: alc,
-      ebc_lt: color,
+      abv_gt: filters.alc.min,
+      abv_lt: filters.alc.max,
+      ebc_gt: filters.color.min,
+      ebc_lt: filters.color.max,
       beer_name: name,
     });
   };
@@ -32,13 +46,24 @@ const SearchBar = ({ handler }) => {
     toggleFilterVisible(!isFiltersVisible);
     //Clear filters when closed
     if (!isFiltersVisible) {
-      setFilters({});
+      setFilters({
+        alc: {
+          min: 0.5,
+          max: 55,
+        },
+        color: {
+          min: 1,
+          max: 40,
+        },
+      });
     }
     //Fetch new data without any filter
     handler({
-      alc: "",
-      color: "",
-      name: name,
+      abv_gt: "",
+      abv_lt: "",
+      ebc_gt: "",
+      ebc_lt: "",
+      beer_name: name,
     });
   };
   return (
@@ -61,7 +86,45 @@ const SearchBar = ({ handler }) => {
       </div>
       {isFiltersVisible && (
         <div className={styles.filter}>
-          <Range getFilters={getFilters} />
+          <label>{`${filters.alc.min}% - ${filters.alc.max}%vol `}</label>
+          <Range
+            onAfterChange={(value) => {
+              getFilters({ alc: { min: value[0], max: value[1] } });
+            }}
+            min={0.5}
+            max={55}
+            step={0.5}
+            defaultValue={[0.5, 55]}
+            tipFormatter={(value) => `${value}%`}
+          />
+          <div className={styles["beer-cups"]}>
+            <div
+              className={`${styles["beer-color"]} ${
+                styles["ebc-" + filters.color.min]
+              }`}
+            >
+              <label htmlFor="" className={`${styles.beer} `}></label>
+            </div>
+            <p>{` - `}</p>
+            <div
+              className={`${styles["beer-color"]} ${
+                styles["ebc-" + filters.color.max]
+              }`}
+            >
+              <label htmlFor="" className={`${styles.beer} `}></label>
+            </div>
+          </div>
+
+          <Range
+            onAfterChange={(value) => {
+              getFilters({ color: { min: value[0], max: value[1] } });
+            }}
+            min={1}
+            max={40}
+            step={1}
+            defaultValue={[1, 40]}
+            tipFormatter={(value) => `${value}`}
+          />
         </div>
       )}
     </div>
