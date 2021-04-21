@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/punkAPI-beercards/static/css/main.6f07ab5f.chunk.css",
-    "main.js": "/punkAPI-beercards/static/js/main.30db82f7.chunk.js",
-    "main.js.map": "/punkAPI-beercards/static/js/main.30db82f7.chunk.js.map",
+    "main.js": "/punkAPI-beercards/static/js/main.5f07fa92.chunk.js",
+    "main.js.map": "/punkAPI-beercards/static/js/main.5f07fa92.chunk.js.map",
     "runtime-main.js": "/punkAPI-beercards/static/js/runtime-main.c4b8da1b.js",
     "runtime-main.js.map": "/punkAPI-beercards/static/js/runtime-main.c4b8da1b.js.map",
     "static/js/2.191803f8.chunk.js": "/punkAPI-beercards/static/js/2.191803f8.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.c4b8da1b.js",
     "static/js/2.191803f8.chunk.js",
     "static/css/main.6f07ab5f.chunk.css",
-    "static/js/main.30db82f7.chunk.js"
+    "static/js/main.5f07fa92.chunk.js"
   ]
 }
