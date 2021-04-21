@@ -8,6 +8,7 @@ export const getBeer = (callback, query) => {
     }, {});
   //converting into URL parameters
   const filters = new URLSearchParams(query).toString();
+  console.log(filters);
   fetch("https://api.punkapi.com/v2/beers?" + filters)
     .then((response) => response.json())
     .then((data) => callback(data));

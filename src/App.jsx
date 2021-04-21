@@ -7,8 +7,8 @@ import React, { useState } from "react";
 function App() {
   const [beerList, setBeerList] = useState([]);
 
-  const searchEventHandler = (filtersObj) => {
-    getBeer(setBeerList, filtersObj);
+  const searchEventHandler = (obj) => {
+    getBeer(setBeerList, obj);
   };
 
   return (

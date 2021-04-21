@@ -9,9 +9,9 @@ const SearchBar = ({ handler }) => {
   const getText = ({ target }) => {
     setName(target.value);
     handler({
-      alc: filters.alc,
-      color: filters.color,
-      name: target.value,
+      abv_lt: filters.alc,
+      ebc_lt: filters.color,
+      beer_name: target.value,
     });
   };
 
@@ -22,9 +22,9 @@ const SearchBar = ({ handler }) => {
       color: color,
     });
     handler({
-      alc: alc,
-      color: color,
-      name: name,
+      abv_lt: alc,
+      ebc_lt: color,
+      beer_name: name,
     });
   };
 
