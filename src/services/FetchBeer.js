@@ -1,12 +1,15 @@
-export const getBeer = (callback,obj) => {
-  let {name,alc, color} = obj;
-  name = name ? `beer_name=${name}` : "";
-  alc = alc ? `abv_lt=${alc}` : "";
-  color = color ? `ebc_lt=${color}` : "";
-  const qArr = [name,alc,color];
-  let query = qArr.filter(filter => filter).join("&");
-  query = query ? "?"+query : ""; 
-  fetch('https://api.punkapi.com/v2/beers'+query)
-  .then(response => response.json())
-  .then(data => callback(data));
+export const getBeer = (callback, query) => {
+  //removing empty props from filter obj
+  query = Object.keys(query)
+    .filter((key) => query[key])
+    .reduce((obj2, key) => {
+      obj2[key] = query[key];
+      return obj2;
+    }, {});
+  //converting into URL parameters
+  const filters = new URLSearchParams(query).toString();
+  console.log(filters);
+  fetch("https://api.punkapi.com/v2/beers?" + filters)
+    .then((response) => response.json())
+    .then((data) => callback(data));
 };
